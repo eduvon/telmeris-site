@@ -2,7 +2,7 @@
 
 ## Preview locally
 
-From the repository root, run `python3 -m http.server 8000` and open `http://localhost:8000/`. The blog page is at `http://localhost:8000/blog/`. Stop the server with `Ctrl+C`.
+From the repository root, run `python3 -m http.server 8000` and open `http://localhost:8000/`. The blog page is at `http://localhost:8000/blog/` and the featured article is at `http://localhost:8000/blog/real-value-of-ai/`. Stop the server with `Ctrl+C`.
 
 ## Save future changes
 
