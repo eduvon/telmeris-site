@@ -2,7 +2,9 @@
 
 ## Preview locally
 
-From the repository root, run `python3 -m http.server 8000` and open `http://localhost:8000/`. The blog page is at `http://localhost:8000/blog/` and the featured article is at `http://localhost:8000/blog/real-value-of-ai/`. Stop the server with `Ctrl+C`.
+From the repository root, run `python3 -m http.server 8000`, then open `http://localhost:8000/`. The blog page is at `http://localhost:8000/blog/`, the featured article is at `http://localhost:8000/blog/real-value-of-ai/`, and the partners page is at `http://localhost:8000/partners/`. Stop the server with `Ctrl+C`.
+
+Do not open the `blog/` or `partners/` folders directly from Finder or with a `file://` URL. Browsers show a directory listing for local folders; the local server resolves each clean route to its `index.html` page.
 
 ## Save future changes
 
