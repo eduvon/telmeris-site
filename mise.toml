@@ -1,0 +1,15 @@
+# Assigned port (see ~/dev/PORTS.md). mise sets this whenever you're in this folder.
+[env]
+PORT = "8000"
+
+[tasks.dev]
+description = "Preview the Telmeris site on its assigned port"
+run = '''
+if lsof -nP -iTCP:$PORT -sTCP:LISTEN >/dev/null 2>&1; then
+  echo "Port $PORT is already in use by:"
+  lsof -nP -iTCP:$PORT -sTCP:LISTEN
+  exit 1
+fi
+echo "Telmeris site → http://localhost:$PORT"
+python3 -m http.server $PORT
+'''
